@@ -1,0 +1,784 @@
+/* || GENERAL STYLES */
+footer
+{
+    clear:both;
+    margin-top: 20px;
+}
+
+
+
+/* || UTILITIES - KEYFRAMES */
+
+/*animation for the navbar in homepage*/
+@keyframes nav1
+{
+    0% 
+    {
+        background: #f9622f;
+        color: #b42a08;
+        opacity: 20%;
+    }
+    30% 
+    {
+        background: #f9622f;
+        color: white;
+        opacity: 100%;
+    }
+    100% 
+    {
+        background: #f9622f;
+        color: white;
+        opacity: 100%;
+    }
+}
+
+/*animation for the navbar in post job vacancy 
+  and post job process page*/
+@keyframes nav2
+{
+    0% 
+    {
+        background: #028881;
+        color: #0e5352;
+        opacity: 20%;
+    }
+    30% 
+    {
+        background: #028881;
+        color: white;
+        opacity: 100%;
+    }
+    100% 
+    {
+        background: #028881;
+        color: white;
+        opacity: 100%;
+    }
+}
+
+/*animation for the navbar in search job vacancy 
+  and search job process page*/
+@keyframes nav3
+{
+    0% 
+    {
+        background: #6519c3;
+        color: #3d0087;
+        opacity: 20%;
+    }
+    30% 
+    {
+        background: #6519c3;
+        color: white;
+        opacity: 100%;
+    }
+    100% 
+    {
+        background: #6519c3;
+        color: white;
+        opacity: 100%;
+    }
+}
+
+/*animation for the navbar in about this page*/
+@keyframes nav4
+{
+    0% 
+    {
+        background: #dc008c;
+        color: #970260;
+        opacity: 20%;
+    }
+    30% 
+    {
+        background: #dc008c;
+        color: white;
+        opacity: 100%;
+    }
+    100% 
+    {
+        background: #dc008c;
+        color: white;
+        opacity: 100%;
+    }
+}
+
+/*Animate logo from up to down in homepage,
+  fade object from invisible to visible (full opacity)*/
+@keyframes animLogo
+{
+    0% 
+    {   top: 0vw;
+        opacity: 0;
+    }
+    100% 
+    {   
+        top:14vw;
+        opacity: 1;
+    }
+}
+
+/*Animate logo from up to down in about this page,
+  fade object from invisible to visible (full opacity)*/
+@keyframes animLogo2
+{
+    0% 
+    {   top: 0vw;
+        opacity: 0;
+    }
+    100% 
+    {   
+        top:10vw;
+        opacity: 1;
+    }
+}
+
+/*To make an object sliding left to the page*/
+@keyframes slideToLeft 
+{
+    from 
+    {
+        margin-left: 100%;
+        width: 150%;
+    }
+
+    to 
+    {
+        margin-left: 5%;
+        width: 90%;
+    }
+}
+
+/*To make an object sliding right of the page*/
+@keyframes slideToRight 
+{
+    from 
+    {
+        margin-left: -100%;
+        width: 150%;
+    }
+
+    to 
+    {
+        margin-left: 5%;
+        width: 90%;
+    }
+}
+
+
+
+/* || UTILITIES - FONTS */
+@font-face 
+{
+    font-family: "Quicksand";
+    src: url("style/Quicksand_Book.otf");
+}
+
+@font-face 
+{
+    font-family: "Capuche";
+    src: url("style/Capuche_Trial.otf");
+}
+
+
+
+/* || SITEWIDE */
+
+/*Container for the background*/
+.container
+{
+    width: 100%;
+    display:block;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+/* Welcome image wallpaper in each page */
+#background
+{
+    top: -20px;
+    left: -20px;
+    position: relative;
+    display: block;
+    width: 105%;
+}
+
+/*Container for the rounded square on 
+  top of the background*/
+.subContainer
+{
+    top: 4.5vw;
+    left: 4vw;
+    position: absolute;
+    background-color: white;
+    border-radius: 5vw;
+    border-width: 1vw;
+    border-color: white;
+    border-style: solid;
+    opacity: 28%;
+    width: 90%;
+    height: 70%;
+}
+
+/*Container for the border of the rounded square*/
+.containerBorder
+{
+    top: 4.5vw;
+    left: 4vw;
+    position: absolute;
+    border-radius: 5vw;
+    border-width: 1vw;
+    border-color: #b94720;
+    border-style: solid;
+    width: 90%;
+    height: 70%;
+}
+
+/*The navigation link class*/
+#topnav, #topnav2, #topnav3, #topnav4
+ {
+    overflow: hidden;
+    padding-right: 2vw;
+}
+
+/*The nav texts in each page*/
+#topnav a, #topnav2 a, #topnav3 a, #topnav4 a
+{
+    text-decoration: none;
+    font-size: 1.5vw;
+    font-family: Capuche;
+    padding: 1vw 2vw;
+    border-radius: 50px;
+    float: right;
+    margin: 2vw 0.5vw;
+    letter-spacing: 1px;
+}
+
+/*the nav bar text color for each page*/
+#topnav a
+{
+    color: #b42a08;
+}
+#topnav2 a 
+{
+    color: #0e5352;
+}
+#topnav3 a 
+{
+    color:  #3d0087;
+}
+#topnav4 a 
+{
+    color:  #970260;
+}
+
+/*Settings for the nav when in hover for each page*/
+#topnav a:hover
+{
+    animation: nav1 1.5s ease-in forwards;
+}
+#topnav2 a:hover
+{
+    animation: nav2 1.5s ease-in forwards;
+}
+#topnav3 a:hover
+{
+    animation: nav3 1.5s ease-in forwards;
+}
+#topnav4 a:hover
+{
+    animation: nav4 1.5s ease-in forwards;
+}
+
+/*When the current page clicked, the nav for that page is activated*/
+#topnav a.active
+{
+    background-color: white;
+    color: #f9622f;
+}
+#topnav2 a.active
+{
+    background-color: white;
+    color: #028881;
+}
+#topnav3 a.active
+{
+    background-color: white;
+    color: #6519c3;
+}
+#topnav4 a.active
+{
+    background-color: white;
+    color: #dc008c;
+}
+
+/*Copyright setting for each page*/
+#copyright
+{
+    overflow: hidden;
+    font-family: Quicksand;
+    text-align: right;
+    color: white;
+    padding-right: 10px;
+    font-size: 2vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+}
+
+
+/* || HOMEPAGE */
+
+/*The setting for the logo title in the homepage*/
+#logo
+{
+    top: 14vw;
+    left: 12vw;
+    position: absolute;
+    width: 80%;
+    float: left;
+    animation: animLogo 2s forwards;
+}
+
+/*The container for the card's background*/
+#box1a
+{
+    top: 8vw;
+    left: 107vw;
+    position: absolute;
+    width: 60%;
+    height: 71%;
+    float: left;
+    background-color: #95ecff;
+    border-radius: 2vw;
+    box-shadow: 10px 15px 0px #b94720; 
+    
+}
+
+/*The container for the card*/
+#box1b
+{
+    top: 14vw;
+    left: 107vw;
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    float: left;
+    background-color: transparent;
+    border-radius: 2vw;
+    perspective: 1000px;
+}
+
+/*The flipping card setting*/
+#flipBox1b 
+{
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+}
+#box1b:hover #flipBox1b
+{
+    transform:rotateX(180deg);
+}
+#box1bFront, #box1bBack 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+#box1bFront
+{
+    background-color: white;
+    border-radius: 2vw;
+}
+#box1bBack 
+{
+    background-color: #ffc832;
+    border-radius: 2vw;
+    transform: rotateX(180deg);
+}
+
+/*The illustration of the profile pic*/
+#profilePic
+{
+    position: absolute;
+    top: 4vw;
+    left: 5vw;
+    border-radius: 2vw;
+    width: 40%;
+    height: auto;
+    float: left;
+}
+
+/*The bio container listing name, student id, and email*/
+#bio
+{
+    margin-top: 4vw;
+    margin-right: 5vw;
+    font-size: 2vw;
+    font-family: Quicksand;
+    float: right;
+    color: #656565;
+    text-align: right;
+}
+
+/*The statement container which can be seen 
+  when the card is hovered*/
+#statement
+{
+    font-size: 2vw;
+    font-family: Quicksand;
+    float: right;
+    text-align: right;
+    color: #f9622f;
+}
+
+/*The text of the statement*/
+#statementText
+{
+    font-size: 2vw;
+    font-family: Quicksand;
+    text-align: center;
+    color: white;
+    margin-top: 10vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+/*The slider container for sliding between two object*/
+.slider 
+{
+    width: 100%;
+    height: 85%;
+    text-align: center;
+    overflow: hidden;
+}
+
+/*The container for two objects*/
+.imageContainer 
+{
+    width: 90%;
+    height: 85%;
+    clear: both;
+    position: relative;
+    transition: left 2s;
+}
+
+/*sliding target for title lgog*/
+#slide-1:target ~ .imageContainer 
+{
+    left: 0%;
+}
+
+/*sliding targer for card object*/
+#slide-2:target ~ .imageContainer 
+{
+    left: -100%;
+}
+
+/*Button for two images to slide*/
+.circBtn 
+{
+    position: relative;
+}
+
+/*The button link (to title logo or card object)*/
+.circBtn a 
+{
+    display: inline-block;
+    height: 2vw;
+    width: 2vw;
+    border-radius: 1vw;
+    background-color: white;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+    margin-bottom: -3vw;
+}
+
+/*The button to be changed its color when in hover*/
+.circBtn a:hover
+{
+    background-color: #cacaca;
+}
+
+/*The previous button (has same functionality as the circ button)*/
+#prev
+{
+    position: absolute;
+    top: 30vw;
+    width: 8vw;
+    left: 0;
+    cursor: pointer;
+    -webkit-mask-image: url("style/prev.png");
+    mask-image: url("style/prev.png");
+    mask-size: contain;
+    background-color: white;
+}
+
+/*The previous button to be changed its color when in hover*/
+#prev:hover
+{
+    -webkit-mask-image: url("style/prev.png");
+    mask-image: url("style/prev.png");
+    mask-size: contain;
+    background-color: rgb(196, 61, 3);
+}
+
+/*The next button (has same functionality as the circ button)*/
+#next
+{
+    position: absolute;
+    top: 30vw;
+    width: 8vw;
+    right: 0;
+    cursor: pointer;
+    -webkit-mask-image: url("style/next.png");
+    mask-image: url("style/next.png");
+    mask-size: contain;
+    background-color: white;
+}
+
+/*The next button to be changed its color when in hover*/
+#next:hover
+{
+    -webkit-mask-image: url("style/next.png");
+    mask-image: url("style/next.png");
+    mask-size: contain;
+    background-color: rgb(196, 61, 3);
+}
+
+
+
+/* || POST JOB FORM AND SEARCH JOB FORM PAGE */
+
+/*The title of the page*/
+.title
+{
+    color: white;
+    font-family: Capuche;
+    text-align: center;
+    font-size: 4vw;
+    margin-top: 2vw;
+}
+
+/*the input text setting*/
+.pHolder
+{
+    border-radius: 2vw;
+    border-width: 0.5vw;
+    border-color: #0e5352;
+    text-align: center;
+    line-height: 1.5;
+    display:block;
+    width: 25vw;
+    height: 3vw;
+    font-family: Quicksand;
+    font-size: 2vw;
+}
+
+/*The placeholder format for the input text*/
+.pHolder::placeholder
+{
+    opacity: .5;
+    color: grey;
+    font-family: Capuche;
+    text-align: center;
+    padding: 0.5vw 0.5vw 0.5vw 0.5vw;
+    font-size: 2vw;
+}
+
+/*The form's label format */
+.label
+{
+    font-size: 2.5vw;
+    text-align: center;
+    color: #0e5352;
+    font-family: Capuche;
+}
+
+/*Another type of label's format in the form*/
+.label2
+{
+    font-size: 2vw;
+    text-align: center;
+    color: white;
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
+/*The form table format*/
+.formTable
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Submit and reset button properties*/
+.button
+{
+    border-radius: 2vw;
+    font-family: Capuche;
+    text-align: center;
+    width: 30%;
+    font-size: 2vw;
+}
+
+
+
+/* || POST JOB PROCESS PAGE */
+
+/*The error message format*/
+.errorMsg
+{
+    border-radius: 2vw;
+    background-color: white;
+    color: #b94720;
+    text-align: center;
+    display:block;
+    font-family: Quicksand;
+    font-size: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    padding-top: 0.5vw;
+    padding-top: 0.5vw;
+    height: 2.5vw;
+}
+
+
+
+/* || SEARCH JOB PROCESS PAGE */
+
+/*The td and th setting for search job process page,
+  making sure the upper border radius is round*/
+.delBorder, .delBorder2 
+{
+    padding: 1vw 1vw 1vw 1vw;
+}
+.delBorder2 
+{
+    border-top: none;
+    background-color: #3b0083;
+    color: white;
+}
+.delBorder2:first-child
+{
+    border-top-left-radius: 2vw;
+}
+.delBorder2:last-child
+{
+    border-top-right-radius: 2vw;
+}
+.delBorder:first-child, .delBorder2:first-child 
+{
+     border-left: none;
+}
+.delBorder:last-child, .delBorder2:last-child
+{
+    border-right: none;
+}
+.delBorder:first-child, .delBorder:last-child
+{
+    border-bottom: none;
+}
+
+/*Make the even row to have different color*/
+.row:nth-child(even)
+{
+    background-color: #e6d1ff;
+}
+
+/*The table setting for the job list in the 
+  search job process page*/
+.jobList
+{
+    margin-top: -5vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 2vw; 
+    border-collapse:separate;
+    margin-bottom: 5vw;
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 1.5vw;
+}
+
+
+
+/* || ABOUT THIS PAGE */
+
+/*The setting for the logo title in the about this page*/
+#logo2
+{
+    top: 10vw;
+    left: 12vw;
+    position: absolute;
+    width: 80%;
+    float: left;
+    animation: animLogo2 2s forwards;
+}
+
+/*The block container for the answers*/
+.blockAnim1, .blockAnim2
+{
+    overflow: hidden;
+    font-family: Quicksand;
+    text-align: justify;
+    color: white;
+    animation-duration: 3s;
+    width: 90%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 5%;
+    position: relative;
+}
+
+/*The block background image*/
+.blockImg
+{
+    margin-top: 5vw;
+    width: 100%;
+    position: relative;
+    border-radius: 2vw;
+}
+
+/*Slide block to left*/
+.blockAnim1
+{
+    animation-name: slideToLeft;
+}
+
+/*Slide block to right*/
+.blockAnim2
+{
+    animation-name: slideToRight;
+}
+
+/*The answer format to be displayed in the block container*/
+.ans
+{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
+/*The discussion image format to be displayed 
+  in the block container*/
+.disc
+{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
